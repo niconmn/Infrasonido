@@ -24,7 +24,7 @@ https://circuitpython.readthedocs.io/projects/ads1x15/en/latest/api.html#analog-
 2° Cargar las libreria de Circuipython.
 
 ## Programa Ripepepalala.py
-[Ripepepalala.py](./Infrasonido/programas)
+[Ripepepalala.py](./Infrasonido/tree/main/programas)
 
 - Ejecutando el programa comienza a adquirir cada 10 mS.
 - Los datos los guardará en un .csv que crea en la carpeta donde esta el programa.
