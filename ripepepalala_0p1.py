@@ -6,8 +6,6 @@ Created on Wed Apr 28 11:24:50 2021
 
 Basicamente una copia del programa de Diego Perez rpices_fpss250b.py
 
-sleep 10; /usr/bin/python /home/pi/nico_ADS1115/ripepepalala_0p1.py 
-
 """
 import time
 import datetime
