@@ -6,6 +6,8 @@ Created on Wed Apr 28 11:24:50 2021
 
 Basicamente una copia del programa de Diego Perez rpices_fpss250b.py
 
+Prueba Github desktop
+
 """
 import time
 import datetime
