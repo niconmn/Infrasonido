@@ -32,9 +32,6 @@ file = open(nombrearchivo + ".csv" ,'w+')
 sys.stdout.write("Archivo de trabajo abierto correctamente: ")
 sys.stdout.write(str(nombrearchivo)+ ".csv" + "\n")
 
-
-#/home/pi/nico_ADS1115/datos
-
 #%% Config ADS1115 I2C
 
 i2c = busio.I2C(board.SCL, board.SDA, frequency=1000000) # Create the I2C bus para alta velocidad
