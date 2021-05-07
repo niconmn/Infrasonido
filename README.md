@@ -65,7 +65,7 @@ La mecanica de trabajo es similar que con el de Infrasonido:
 
 2- [init_temp.sh](https://github.com/niconmn/Infrasonido/blob/main/Temperatura/init_temp.sh) Crea una carpeta con el "Año-Mes" dentro de ellas crea un archivo `Temperatura_YYYY_MM_dd.log` donde se almacenan los datos generados. Por ultimo llama a el programa `temp_0p1.py`.
 
-3 [temp_0p1.py](https://github.com/niconmn/Infrasonido/blob/main/Temperatura/temp_0p1.py) devuelve la fecha, hora y temperatura (°C) registrada por el sensor con el formato `YYYMMdd_HHmmss Temp °C = XX.XXX`, como los "imprime" en consola terminan escribiedose en el archivo `.log` generado en `init_temp.sh`.
+3- [temp_0p1.py](https://github.com/niconmn/Infrasonido/blob/main/Temperatura/temp_0p1.py) devuelve la fecha, hora y temperatura (°C) registrada por el sensor con el formato `YYYMMdd_HHmmss Temp °C = XX.XXX`, como los "imprime" en consola terminan escribiedose en el archivo `.log` generado en `init_temp.sh`.
 
 ## Directorios
 ``` Arbol de directorios
