@@ -24,7 +24,7 @@ https://circuitpython.readthedocs.io/projects/ads1x15/en/latest/api.html#analog-
 2° Cargar las libreria de Circuipython.
 
 ## Programa Ripepepalala.py
-[Ripepepalala.py](https://github.com/niconmn/Infrasonido/tree/main/programas)
+[Ripepepalala.py](https://github.com/niconmn/Infrasonido/blob/main/Infrasonido/ripepepalala_0p1.py)
 
 - Ejecutando el programa comienza a adquirir cada 10 mS.
 - Los datos los guardará en un .csv que crea en la carpeta donde esta el programa.
@@ -63,9 +63,9 @@ La mecanica de trabajo es similar que con el de Infrasonido:
 
 1- Se configuró `contab -e` con la rutina `*/5 * * * *  /home/pi/Temperatura/programs/init_temp.sh` que dispara cada 5 minutos el script `init_temp.sh`.
 
-2- `init_temp.sh` Crea una carpeta con el "Año-Mes" dentro de ellas crea un archivo `Temperatura_YYYY_MM_dd.log` donde se almacenan los datos generados. Por ultimo llama a el programa `temp_0p1.py`.
+2- [init_temp.sh] (https://github.com/niconmn/Infrasonido/blob/main/Temperatura/init_temp.sh) Crea una carpeta con el "Año-Mes" dentro de ellas crea un archivo `Temperatura_YYYY_MM_dd.log` donde se almacenan los datos generados. Por ultimo llama a el programa `temp_0p1.py`.
 
-3 `temp_0p1.py` devuelve la fecha, hora y temperatura (°C) registrada por el sensor con el formato `YYYMMdd_HHmmss Temp °C = XX.XXX`, como los "imprime" en consola terminan escribiedose en el archivo `.log` generado en `init_temp.sh`.
+3 [temp_0p1.py] (https://github.com/niconmn/Infrasonido/blob/main/Temperatura/temp_0p1.py) devuelve la fecha, hora y temperatura (°C) registrada por el sensor con el formato `YYYMMdd_HHmmss Temp °C = XX.XXX`, como los "imprime" en consola terminan escribiedose en el archivo `.log` generado en `init_temp.sh`.
 
 ## Directorios
 ``` Arbol de directorios
