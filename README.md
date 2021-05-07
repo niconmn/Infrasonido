@@ -31,7 +31,7 @@ https://circuitpython.readthedocs.io/projects/ads1x15/en/latest/api.html#analog-
 - Como nombre utilizará la fecha y hora del inicio de la adquisicion. 
 - Crea un nuevo archivo cada una hora.
 
-## Corriendo en Raspberry
+## Funcionamiento de los programas y rutinas
 1- La raspberry se configura para reiniciar todos los dias a las 00:00 hs.  Esto se debe configurar en `sudo nano /etc/crontab` y dentro de ese archivo `$0 0     * * *   root    reboot`.
 
 2- Para que el programa comience despues de cada reinicio se debe configurar una tarea en `crontab -e`: `@reboot sleep 60 && /home/pi/Infrasonido/ripepepalala.sh`. De esta manera, despues de cada reinicio aguarda 60 segundos y "llama" a el archivo `ripepepalala.sh`
