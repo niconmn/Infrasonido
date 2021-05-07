@@ -50,5 +50,34 @@ https://circuitpython.readthedocs.io/projects/ads1x15/en/latest/api.html#analog-
 		ADS_Ri_YYYY-MM-DD.log
 		"YYYY-MM-dd HH:mm:ss.6f.csv"
 ```
+## Temperatura
+
+Para obtener la medcion de temperatura del ambiente se utilizó un sensor digital DS18B20 que funciona con el protocolo 1wire.
+
+## Conexiones DS18B20
+  - 1 ---> GND
+  - 2 ---> PIN 4 Rpi
+  - 3 ---> 3V3
+
+La mecanica de trabajo es similar que con el de Infrasonido:
+
+1- Se configuró `contab -e` con la rutina `*/5 * * * *  /home/pi/Temperatura/programs/init_temp.sh` que dispara cada 5 minutos el script `init_temp.sh`.
+
+2- `init_temp.sh` Crea una carpeta con el "Año-Mes" dentro de ellas crea un archivo `Temperatura_YYYY_MM_dd.log` donde se almacenan los datos generados por `init_temp_0p1`. Por ultimo llama a el programa `temp_0p1.py`.
+
+3 `temp_0p1.py` devuelve la fecha, hora y temperatura (°C) registrada por el sensor con el formato `YYYMMdd_HHmmss Temp °C = XX.XXX`, como los "imprime" en consola terminan escribiedose en el archivo `.log` generado en `init_temp.sh`.
+
+## Directorios:
+``` Arbol de directorios
+/home/pi/Temperatura
+├── programs/
+	temp_0p1.py
+	init_temp.sh
+
+├── data/
+	├── YYYY-MM/
+		Temperatura_YYYY-MM-DD.log
+```
+
 
 
