@@ -85,7 +85,7 @@ La mecanica de trabajo es similar que con el de Infrasonido:
 ```
 
 ## RTC DS3231
-[Libreria y ejemplo utilizado](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi?view=all)
+[Guia para instalar el RTC](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi?view=all)
 
 ## Conexiones DS 3231
 Es necesario quitar el diodo o la resestencia de 200ohm para evitar la carga de la pila que la dañara en caso de no ser recargable.
