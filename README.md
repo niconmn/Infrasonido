@@ -2,8 +2,10 @@
 Placa utilizada Raspberry Pi 4 model B rev1.1.
 Conversor Analogico Digital (ADC) ADS1115.
 Solo un canal de adquisición, en modo continuo, para lograr el sample rate necesario (10 mS entre samples).
+
 RTC DS3231
-Sensor Humedad y Temperatura DHT22
+
+DHT22 sensor Humedad y Temperatura. 
 
 ## Conexiones ADS1115 (en puerto GPIO)
   - PIN SDA Rpi a SDA ADS1115
