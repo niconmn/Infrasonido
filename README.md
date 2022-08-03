@@ -101,7 +101,7 @@ Es necesario quitar el diodo o la resestencia de 200ohm para evitar la carga de 
 
 2° Chequear los dispositivos conectador por I2C utilizando el comando `sudo i2cdetect -y 1`, generalmente se encuentra el modulo RTC en la direccion 68.
 
-3° agregar la linea `dtoverlay=i2c-rtc,ds3231` al final del archivo `config.txt` (`sudo nano /boot/config.txt`).
+3° agregar la linea `dtoverlay=i2c-rtc,ds3231` al final del archivo `config.txt` (`sudo nano /boot/config.txt`) y reiniciar.
 
 4° Chequear y corroorar nuevamente que el sensor ahora aparezca como UU con el comando `sudo i2cdetect -y 1`.
 
